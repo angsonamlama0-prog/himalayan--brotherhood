@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Himalayan Brotherhood - A community-driven brand celebrating unity, culture, and the Himalayan spirit through premium t-shirts and authentic stories.">
+    <meta name="keywords" content="Himalayan Brotherhood, t-shirts, brotherhood, Himalayan culture, fashion, community">
+    <meta property="og:title" content="Himalayan Brotherhood - Community & Culture">
+    <meta property="og:description" content="Join the brotherhood. Wear the culture. Live the spirit.">
+    <meta property="og:type" content="website">
+    <title>Himalayan Brotherhood | Premium T-Shirts & Community</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #161618;
+            background: #ffffff;
+        }
+
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            background: #161618;
+            padding: 1rem 2rem;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+            letter-spacing: 2px;
+        }
+
+        nav .logo span {
+            color: #d32f2f;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover {
+            color: #d32f2f;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #161618 0%, #2a2a2d 100%);
+            color: #fff;
+            padding: 100px 2rem;
+            text-align: center;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 900;
+        }
+
+        .hero h1 span {
+            color: #d32f2f;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            color: #b7b8b6;
+            line-height: 1.8;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #d32f2f;
+            color: #fff;
+            padding: 15px 40px;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            border: 2px solid #d32f2f;
+            transition: all 0.3s;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-button:hover {
+            background: transparent;
+            color: #d32f2f;
+        }
+
+        .cta-button-outline {
+            background: transparent;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+
+        .cta-button-outline:hover {
+            background: #fff;
+            color: #161618;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 80px 2rem;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+            position: relative;
+            padding-bottom: 1.5rem;
+        }
+
+        section h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: #d32f2f;
+        }
+
+        /* Who We Are */
+        .who-we-are {
+            background: #f5f5f5;
+        }
+
+        .who-we-are-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-top: 3rem;
+        }
+
+        .who-we-are-text h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #d32f2f;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .who-we-are-text p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .who-we-are-image {
+            width: 100%;
+            height: 400px;
+            background: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* Our Vision */
+        .our-vision {
+            background: #161618;
+            color: #fff;
+            text-align: center;
+        }
+
+        .our-vision h2 {
+            color: #fff;
+        }
+
+        .our-vision h2::after {
+            background: #fff;
+        }
+
+        .vision-statement {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 3rem auto;
+            line-height: 1.9;
+            color: #b7b8b6;
+        }
+
+        /* Products */
+        .products {
+            background: #fff;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .product-card {
+            background: #f5f5f5;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 8px;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 300px;
+            background: #e0e0e0;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .product-card p {
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .price {
+            font-size: 1.8rem;
+            color: #d32f2f;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Manifesto */
+        .manifesto {
+            background: #fff;
+            padding: 80px 2rem;
+        }
+
+        .manifesto-content {
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.9;
+            font-size: 1.05rem;
+            color: #333;
+        }
+
+        .manifesto-content p {
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        /* Social Section */
+        .social-section {
+            background: #f5f5f5;
+        }
+
+        .social-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .social-card {
+            background: #fff;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .social-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #d32f2f;
+        }
+
+        .social-card p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: #161618;
+            color: #fff;
+            border-radius: 50%;
+            text-decoration: none;
+            transition: background 0.3s;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .social-link:hover {
+            background: #d32f2f;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: #161618;
+            color: #fff;
+            text-align: center;
+        }
+
+        .contact h2 {
+            color: #fff;
+        }
+
+        .contact h2::after {
+            background: #d32f2f;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 3rem auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #333;
+            background: #2a2a2d;
+            color: #fff;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #d32f2f;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-button {
+            background: #d32f2f;
+            color: #fff;
+            padding: 15px 40px;
+            border: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background 0.3s;
+            width: 100%;
+        }
+
+        .submit-button:hover {
+            background: #b71c1c;
+        }
+
+        /* Footer */
+        footer {
+            background: #0d0d0f;
+            color: #999;
+            text-align: center;
+            padding: 3rem 2rem;
+            border-top: 3px solid #d32f2f;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links {
+            margin: 1rem 0;
+        }
+
+        .footer-links a {
+            color: #999;
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #d32f2f;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .who-we-are-content {
+                grid-template-columns: 1fr;
+            }
+
+            .social-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 50px 1rem;
+            }
+
+            nav a {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">HIMALAYAN <span>BROTHERHOOD</span></a>
+            <ul>
+                <li><a href="#who-we-are">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>HIMALAYAN <span>BROTHERHOOD</span></h1>
+            <p class="hero-subtitle">More than a group — a brotherhood built on unity, culture, and pride of the Himalayas.</p>
+            <a href="#products" class="cta-button">Shop Now</a>
+            <a href="#contact" class="cta-button cta-button-outline">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- Who We Are -->
+    <section id="who-we-are" class="who-we-are">
+        <div class="container">
+            <h2>Who We Are</h2>
+            <div class="who-we-are-content">
+                <div class="who-we-are-text">
+                    <h3>Our Story</h3>
+                    <p>Himalayan Brotherhood is a close-knit group of individuals who believe in loyalty, creativity, and representing the Himalayan spirit together.</p>
+                    <p>We started as a few brothers with one vision: to build something meaningful, bold, and original. We aim to build a brand that connects people through style, values, and unity — starting with our own signature t-shirts and growing into something bigger.</p>
+                </div>
+                <div class="who-we-are-image">
+                    <div class="product-image">
+                        <img src="images/shot-ok.jpg" alt="Heritage Tee" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Vision -->
+    <section id="vision" class="our-vision">
+        <div class="container">
+            <h2>Our Vision</h2>
+            <p class="vision-statement">To create a strong community-driven brand that represents brotherhood, identity, and the fearless Himalayan mindset. We believe in loyalty, creativity, and the power of unity.</p>
+        </div>
+    </section>
+
+    <!-- Manifesto -->
+    <section class="manifesto">
+        <div class="manifesto-content">
+            <p><strong>From peaks that touch the silent sky,<br>
+            We rise together, you and I.<br>
+            Not stitched by cloth, but trust and pride,<br>
+            A bond no distance can divide.</strong></p>
+
+            <p>Each thread holds stories, strong and true,<br>
+            Of roots we share, of paths we grew.<br>
+            This isn't fashion, worn for show—<br>
+            It's who we are, the world should know.</p>
+
+            <p>Wear it loud, or wear it plain,<br>
+            Through sunshine, storm, and mountain rain.<br>
+            Not just a t-shirt on your skin,<br>
+            But brotherhood you carry within.</p>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/heritage-tee.jpg" alt="Heritage Tee" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3>Heritage Tee</h3>
+                    <p>Clean, bold design inspired by brotherhood and the Himalayan spirit. Made using premium-quality fabric that feels soft, breathable, and built to last.</p>
+                    <div class="price">NRS 1200</div>
+                    <a href="#contact" class="cta-button">Order Now</a>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/limited-edition.jpg" alt="Limited Edition" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3>Limited Edition</h3>
+                    <p>Exclusive designs celebrating our heritage. Each piece tells a story of our brotherhood, crafted for those who wear it with pride and authenticity.</p>
+                    <div class="price">NRS 1200</div>
+                    <a href="#contact" class="cta-button">Reserve Now</a>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/brotherhood-bundle.jpg" alt="Brotherhood Bundle" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3>Brotherhood Bundle</h3>
+                    <p>Get the complete experience with our bundled collection. T-shirt, accessories, and exclusive content that represents our united vision.</p>
+                    <div class="price">NRS 1200</div>
+                    <a href="#contact" class="cta-button">Get Bundle</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social & Connect -->
+    <section class="social-section">
+        <div class="container">
+            <h2>Connect With Us</h2>
+            <div class="social-grid">
+                <div class="social-card">
+                    <h3>Follow on Instagram</h3>
+                    <p>Connect with us on Instagram to explore the world of Himalayan Brotherhood. From our latest t-shirt designs to exclusive drops, behind-the-scenes glimpses, and everyday moments of brotherhood, Instagram is where our story comes alive.</p>
+                    <a href="https://instagram.com" target="_blank" class="social-link">📷</a>
+                </div>
+
+                <div class="social-card">
+                    <h3>Watch on TikTok</h3>
+                    <p>Watch our journey in motion on TikTok. From creative videos showcasing our designs to fun, authentic moments that capture the essence of our brotherhood, follow along for original content that inspires and entertains.</p>
+                    <a href="https://tiktok.com" target="_blank" class="social-link">🎵</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p style="font-size: 1.1rem; color: #b7b8b6; margin-bottom: 2rem;">Have questions or want to collaborate? We'd love to hear from you.</p>
+            
+            <form class="contact-form" onsubmit="handleFormSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Himalayan Brotherhood. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#who-we-are">About</a>
+                <a href="#products">Products</a>
+                <a href="#contact">Contact</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <p style="margin-top: 1.5rem; font-size: 0.9rem;">Built with pride. Worn with brotherhood.</p>
+        </div>
+    </footer>
+
+    <script>
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            // Clear form
+            event.target.reset();
+
+            // Show confirmation
+            alert(`Thank you, ${name}! We've received your message and will get back to you soon at ${email}.`);
+        }
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
